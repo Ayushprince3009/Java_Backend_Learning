@@ -1,0 +1,13 @@
+package com.kodewala.comparator.p1;
+
+import java.util.Comparator;
+
+public class CompareByName implements Comparator<Student> {
+
+	@Override
+	public int compare(Student s1, Student s2) {
+		int result = s1.getName().compareTo(s2.getName());
+		return result;
+	}
+
+}
