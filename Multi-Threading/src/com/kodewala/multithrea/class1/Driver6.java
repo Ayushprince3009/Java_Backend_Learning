@@ -8,6 +8,7 @@ public class Driver6 {
 
 		t1.start();
 		//t2.start();
+		//t2 will give exception 
 	}
 
 }
