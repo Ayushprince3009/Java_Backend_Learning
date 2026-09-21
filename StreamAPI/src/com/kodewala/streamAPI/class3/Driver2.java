@@ -17,6 +17,7 @@ public class Driver2 {
 //		Map<Character, Long> output = input.chars().mapToObj(c -> (char) c)
 //				.collect(Collectors.groupingBy(c -> c, Collectors.counting()));
 		
+		
 		//important first non repeating character
 		String input = "swiss";
 		Character res = input.chars().mapToObj(c -> (char) c)

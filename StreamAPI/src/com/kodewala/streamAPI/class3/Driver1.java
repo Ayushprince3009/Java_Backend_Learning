@@ -11,10 +11,12 @@ public class Driver1 {
 				4,44,123,34,4,2,33,5,6,52,321,434,634,
 				42,4,546,55,4,4,634,423,5,234);
 		
-		Map<Boolean, List<Integer>> collect = num.stream().collect(Collectors.partitioningBy(n -> !(n % 2 == 0)));
+		Map<Boolean, List<Integer>> collect = num.stream()
+				.collect(Collectors.partitioningBy(n -> !(n % 2 == 0)));
 		System.out.println(collect);
 		System.out.println("---------");
-		Map<Boolean, List<Integer>> collect1 = num.stream().collect(Collectors.partitioningBy(n -> (n % 7 == 0)));
+		Map<Boolean, List<Integer>> collect1 = num.stream()
+				.collect(Collectors.partitioningBy(n -> (n % 7 == 0)));
 		System.out.println(collect1);
 	}
 }

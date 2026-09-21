@@ -16,7 +16,7 @@ public class Driver {
 	System.out.println("Number of Cities:- "+count);
 	
 	Map<Object,List<String>> res = cities.stream()
-			.collect(Collectors.groupingBy(c -> c.length()));
+			.collect(Collectors.groupingBy(c -> c.length()>5));
 	System.out.println(res);
 	
 	}
