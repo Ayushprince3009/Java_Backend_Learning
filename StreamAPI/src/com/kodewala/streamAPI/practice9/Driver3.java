@@ -17,6 +17,7 @@ public class Driver3 {
 			    new Employe(17, "Raj", "IT", 70000),
 			    new Employe(18, "Deepak", "IT", 50000)
 			);
+		
 		Map<String,List<Employe>> res = employees.parallelStream()
 				.filter(emp -> emp.getSalary() >= 55000)
 				.distinct()
@@ -26,6 +27,8 @@ public class Driver3 {
 		System.out.println(res);
 	}
 }
+
+
 
 class Employe{
 	private int num;
