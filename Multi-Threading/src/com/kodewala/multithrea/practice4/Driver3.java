@@ -8,7 +8,8 @@ public class Driver3 {
 		t.setName("Thread-1");
 		t.start();
 		
-		Nishita n1 = new Nishita(k);
+		Kodewala k1 = new Kodewala();
+		Nishita n1 = new Nishita(k1);
 		Thread t1 = new Thread(n1);
 		t1.setName("Thread-2");
 		t1.start();
