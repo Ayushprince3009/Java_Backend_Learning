@@ -6,10 +6,10 @@ import java.util.Map;
 
 //imported this to access the customer data 
 import com.kodewala.kartflip.model.Customer;
-import com.kodewala.kartflip.model.Product;
+
 
 public class CustomerRepository {
-	Map<String, Customer> customers = new HashMap<String, Customer>();
+	private Map<String, Customer> customers = new HashMap<String, Customer>();
 	
 	
 	//adding customer
@@ -23,7 +23,7 @@ public class CustomerRepository {
 	}
 	
 	//searching customer
-	public Customer searchCustomer(String customerId) {
+	public Customer getCustomerById(String customerId) {
 		return customers.get(customerId);
 	}
 	
