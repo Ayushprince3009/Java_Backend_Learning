@@ -1,4 +1,4 @@
-package com.kodewala.practice2;
+package com.kodewala.filter;
 
 import java.util.Arrays;
 import java.util.List;
