@@ -3,7 +3,7 @@ package com.kodewala.multithrea.practice7;
 public class BankAccount {
 	private int balance = 1000;
 	
-	public void transfer(BankAccount reciver, int amount) {
+	public synchronized void transfer(BankAccount reciver, int amount) {
 		if(balance >= amount) {
 			System.out.println(Thread.currentThread().getName()+" Checked Balance: "+balance);
 			
