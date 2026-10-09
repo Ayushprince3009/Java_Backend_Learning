@@ -39,7 +39,7 @@ public class Q5 {
 		
 		List<String> result  =  wareHouse.stream()
 				.flatMap(ware -> ware.stream())
-				.filter(pro -> pro.category.equalsIgnoreCase("electronics") && pro.stock >= 10)
+				.filter(pro -> pro.category.equalsIgnoreCase("electronics") && pro.stock > 10)
 				.limit(4)
 				.map(pro -> pro.productId+" ---> "+pro.productName+" ---> "+pro.stock)
 				.collect(Collectors.toList());
