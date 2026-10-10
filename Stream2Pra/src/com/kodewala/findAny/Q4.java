@@ -47,5 +47,7 @@ public class Q4 {
 				.filter(pro -> pro.contains("o") && pro.length() > 5)
 				.findAny();
 		System.out.println(result);
-	}
+		
+		
+		}
 }
