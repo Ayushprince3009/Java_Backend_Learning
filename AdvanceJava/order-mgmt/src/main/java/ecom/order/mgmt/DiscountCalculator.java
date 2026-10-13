@@ -14,6 +14,10 @@ public class DiscountCalculator {
 			finalAmount = amount - (amount * discount)/100 - 100;
 			break;
 			
+		case "PREMIUM":
+			finalAmount = amount - (amount * discount)/100 - 100;
+			break;	
+			
 		default:
 			finalAmount = amount;
 			break;
